@@ -2,11 +2,11 @@
 
 > aktif olarak dökümantasyonu yazmaya devam ediyorum. şimdilik baya uzun sürecek gibi. bitirdikten sonra ingilizce versiyonunu da paylaşırım.
 >
-> **son değişiklik**: 07.05.2026
->
->
 > admin paneli olarak maalesef voyager kullandığım için repo içerisinde bir .sql dosyası da paylaşmam zorunlu. şimdilik paylaşabileceğim demo bir .sql dosyası yok. ilerde halledeceğim.
 >
+> **son değişiklik**: 07.05.2026
+>
+> **son durum**: 05.06.2026, aslında bu sistemi çalıştığım iş yeri için geliştiriyordum ve iş yerinden ayrılmak zorunda kaldım. kodları paylaşacağım ama dökümantasyona devam eder miyim bilmiyorum :(
 
 ---
 

@@ -7,8 +7,8 @@
 > **son değişiklik**: 07.05.2026
 >
 > **son durum**: 05.06.2026, aslında bu sistemi çalıştığım iş yeri için geliştiriyordum ve iş yerinden ayrılmak zorunda kaldım. kodları paylaşacağım ama dökümantasyona devam eder miyim bilmiyorum :(
-
-projeyi aslında çalıştığım iş yeri için yaptığımı söylemiştim. projeyi onlar için yapsam da kullanmaya hiç fırsat olmadı. neredeyse haberleri bile yok. Bu nedenle admin panelindeki banner resimlerinde "PostAjans" resimleri var. Şimdilik bunlar için demo görseller bulmaya üşendiğim için böyle bırakıyorum. projenin hiçbir şirket veya kişi ile alakası yoktur. 
+>
+> projeyi aslında çalıştığım iş yeri için yaptığımı söylemiştim. projeyi onlar için yapsam da kullanmaya hiç fırsat olmadı. neredeyse haberleri bile yok. Bu nedenle admin panelindeki banner resimlerinde "PostAjans" resimleri var. Şimdilik bunlar için demo görseller bulmaya üşendiğim için böyle bırakıyorum. projenin hiçbir şirket veya kişi ile alakası yoktur. 
 
 ---
 

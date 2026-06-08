@@ -1,0 +1,241 @@
+/*----------| Fonts |----------*/
+
+@import "../fonts-css/atkinson-hyperlegible-next.css";
+@import "../fonts-css/host-grotesk.css";
+@import "../fonts-css/poppins.css";
+@import "../fonts-css/satisfy.css";
+
+/*----------| External CSS |----------*/
+
+@import 'swiper/css/bundle';
+@import '@fancyapps/ui/dist/fancybox/fancybox.css';
+@import "tailwindcss";
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+    --popup-z: 950;
+    --navbar-z: 800;
+    --navbar-h: 80px;
+
+    --aether-container: 2160px;
+    --aether-container-gap: 12px;
+    --aether-section-gap: 36px;
+}
+
+/* sm */
+@media (min-width: 640px) {
+    :root {
+        --aether-container-gap: 12px;
+        --aether-section-gap: 40px;
+    }
+}
+
+/* md */
+@media (min-width: 768px) {
+    :root {
+        --aether-container-gap: 24px;
+        --aether-section-gap: 48px;
+    }
+}
+
+/* lg */
+@media (min-width: 1024px) {
+    :root {
+        --aether-container-gap: 36px;
+        --aether-section-gap: 56px;
+    }
+}
+
+/* xl */
+@media (min-width: 1280px) {
+    :root {
+        --navbar-h: 100px;
+        --aether-container-gap: 48px;
+        --aether-section-gap: 64px;
+    }
+}
+
+/* 2xl */
+@media (min-width: 1536px) {
+    :root {
+        --aether-container-gap: 64px;
+        --aether-section-gap: 72px;
+    }
+}
+
+/*----------| Themes |----------*/
+
+:root {}
+
+:root[data-theme="dark"],
+:root.dark {}
+
+/*----------| Tailwind Mapping |----------*/
+
+@theme {
+    /* fonts */
+    --font-default: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, "Helvetica Neue", Arial, sans-serif;
+    --font-host: "Host Grotesk", var(--font-default);
+    --font-poppins: "Poppins", var(--font-default);
+    --font-satisfy: "Satisfy", var(--font-default);
+    --font-atkinson: "Atkinson Hyperlegible Next", var(--font-default);
+
+    /* z-index */
+    --z-index-popup: var(--popup-z);
+    --z-index-navbar: var(--navbar-z);
+
+    /* spacing */
+    --spacing-navbar: var(--navbar-h);
+    --spacing-aether-container: var(--aether-container);
+    --spacing-aether-container-gap: var(--aether-container-gap);
+    --spacing-aether-section-gap: var(--aether-section-gap);
+}
+
+@layer base {
+    * {
+        @apply box-border;
+    }
+
+    html {
+        -webkit-text-size-adjust: 100%;
+        scroll-behavior: smooth;
+        text-rendering: optimizeLegibility;
+    }
+
+    body {
+        @apply min-h-screen font-default antialiased m-0 p-0;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    svg,
+    i {
+        @apply shrink-0 select-none;
+    }
+
+    img,
+    video,
+    canvas,
+    audio,
+    iframe,
+    embed,
+    object {
+        display: block;
+        vertical-align: middle;
+    }
+
+    img,
+    video {
+        @apply max-w-full h-auto;
+    }
+
+    ::placeholder {}
+
+    ::selection {}
+}
+
+@layer utilities {}
+
+@layer components {
+    .aether-container {
+        @apply w-full mx-auto;
+        @apply max-w-full xl:max-w-aether-container;
+        @apply px-aether-container-gap;
+    }
+
+    .aether-section-gap {
+        @apply py-aether-section-gap;
+    }
+
+    .no-scrollbar {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+
+    /*----------| Inputs |----------*/
+
+    .aether-btn-1 {
+
+        & i,
+        & svg {
+            @apply size-4 lg:size-5 2xl:size-6;
+            @apply shrink-0;
+        }
+
+        &:not(:disabled) {}
+
+        &:disabled {}
+    }
+
+    .aether-btn-play {
+        &:not(:disabled) {}
+
+        &:disabled {}
+    }
+
+    .aether-txtbox-1 {
+        &:not(:disabled) {}
+
+        &::placeholder {}
+
+        &:disabled {}
+    }
+
+    .aether-textarea-1 {
+        &:not(:disabled) {}
+
+        &::placeholder {}
+
+        &:disabled {}
+    }
+
+    /*----------| Table |----------*/
+
+    .aether-table-wrapper {}
+
+    .aether-table-wrapper table {}
+
+    .aether-table-wrapper table thead {}
+
+    .aether-table-wrapper table th {}
+
+    .aether-table-wrapper table tbody tr {
+        &:last-child {
+            @apply border-b-0;
+        }
+    }
+
+    .aether-table-wrapper table td {}
+
+    /*----------| Marquee Slider |----------*/
+
+    @keyframes aether-marquee {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(-50%);
+        }
+    }
+
+    .aether-animate-marquee {
+        display: flex;
+        width: max-content;
+        animation: aether-marquee 60s linear infinite;
+    }
+
+    .pause-on-hover:hover {
+        animation-play-state: paused;
+    }
+}

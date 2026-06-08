@@ -1,0 +1,8 @@
+/* satisfy-regular - latin */
+@font-face {
+    font-display: swap;
+    font-family: 'Satisfy';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/satisfy/satisfy-v22-latin-regular.woff2') format('woff2');
+}

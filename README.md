@@ -10,6 +10,16 @@
 
 ---
 
+# Bilmeniz gereken bir kaç bilgi daha...
+
+Admin rotası voyager'ın default rotası `admin`. 
+
+- **Rota**: 127.0.0.1:8000/admin
+- **E-posta**: admin@test.com
+- **Şifre**: 123
+
+**Sql dosyası**: `aether_lumen.sql` projenin kök dizininde mevcut.
+
 # 📋 MODÜL LİSTESİ
 
 ## Gelişmiş Modüller

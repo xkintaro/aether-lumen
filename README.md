@@ -22,6 +22,28 @@ Admin rotası voyager'ın default rotası `admin`.
 
 **Sql dosyası**: `aether_lumen.sql` projenin kök dizininde mevcut.
 
+## NASIL ÇALIŞTIRILIR?
+
+geçici olarak burada anlatacağım.
+
+kök dizinde  `composer install` ve `npm install` sonrasında 2 terminal kullanarak `php artisan serve` ve `npm run dev`
+
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+YUKARI KISMI GEÇİCİ OLARAK YAZDIM. AŞAĞI KISMI YAZDIKÇA YUKARIYI SİLİCEM.
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+
 # 📋 MODÜL LİSTESİ
 
 ## Gelişmiş Modüller

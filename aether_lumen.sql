@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Anamakine: 127.0.0.1
--- Üretim Zamanı: 03 Nis 2026, 10:50:37
+-- Üretim Zamanı: 08 Haz 2026, 19:54:20
 -- Sunucu sürümü: 10.4.32-MariaDB
 -- PHP Sürümü: 8.2.12
 
@@ -1468,7 +1468,7 @@ INSERT INTO `settings` (`id`, `key`, `display_name`, `value`, `details`, `type`,
 (30, 'documents.intro_video', 'Intro Video (.webm, .mp4)', '[{\"download_link\":\"settings\\\\March2026\\\\Y8Z6HZVktKyzZI0Y5GMp.webm\",\"original_name\":\"demo-video-1.webm\"}]', NULL, 'file', 8, 'Documents'),
 (31, 'site.logo-secondary', 'Logo Secondary', '[{\"download_link\":\"settings\\\\March2026\\\\THYCwDj9DtwautVDVJr2.png\",\"original_name\":\"Square192x192Logo-2.png\"}]', NULL, 'file', 19, 'Site'),
 (33, 'site.favicon', 'Favicon', '[{\"download_link\":\"settings\\\\March2026\\\\SUUl8uFl1Dbpc52sAXDf.png\",\"original_name\":\"Square192x192Logo.png\"}]', NULL, 'file', 9, 'Site'),
-(35, 'contact-information.form-email', 'Form Email', 'mustafw42@gmail.com', NULL, 'text', 14, 'Contact Information'),
+(35, 'contact-information.form-email', 'Form Email', 'mustafw42@gmail.com', NULL, 'text', 15, 'Contact Information'),
 (36, 'contact-information.address', 'Address', 'Suite 283 84384 Marcel Mall, Buckridgefort, NY 26840-4536', NULL, 'text_area', 16, 'Contact Information'),
 (37, 'contact-information.phone', 'Phone', '0552 402 5050', NULL, 'text', 17, 'Contact Information'),
 (38, 'contact-information.email', 'Email', 'aether@demo.com', NULL, 'text', 22, 'Contact Information'),
@@ -1478,9 +1478,10 @@ INSERT INTO `settings` (`id`, `key`, `display_name`, `value`, `details`, `type`,
 (45, 'site.description', 'Site Description', 'Aether Lumen Site Description (Please change the default site description)', NULL, 'text', 6, 'Site'),
 (46, 'documents.intro_video_cover_image', 'Intro Video Cover Image', '', NULL, 'image', 20, 'Documents'),
 (51, 'contact-information.recaptcha-status', 'reCAPTCHA', 'aktif', '{\r\n    \"options\": {\r\n        \"aktif\": \"Aktif\",\r\n        \"pasif\": \"Pasif\"\r\n    }\r\n}', 'select_dropdown', 12, 'Contact Information'),
-(52, 'contact-information.recaptcha-site-key', 'reCAPTCHA Site Key', '6LfO0CsqAAAAABr7j77Gip1iwenNFQlQ2P9M1P1A', NULL, 'text', 13, 'Contact Information'),
-(53, 'meta-tags.head', '<head> </head>', '', NULL, 'code_editor', 25, 'Meta Tags'),
-(54, 'meta-tags.body', '<body> </body>', '', NULL, 'code_editor', 26, 'Meta Tags');
+(52, 'contact-information.recaptcha-site-key', 'reCAPTCHA Site Key', 'your site key', NULL, 'text', 13, 'Contact Information'),
+(53, 'meta-tags.head', '<head> </head>', NULL, NULL, 'code_editor', 25, 'Meta Tags'),
+(54, 'meta-tags.body', '<body> </body>', NULL, NULL, 'code_editor', 26, 'Meta Tags'),
+(55, 'contact-information.recaptcha-secret-key', 'reCAPTCHA Secret Key', 'your secret key', NULL, 'text', 14, 'Contact Information');
 
 -- --------------------------------------------------------
 
@@ -2509,7 +2510,7 @@ ALTER TABLE `roles`
 -- Tablo için AUTO_INCREMENT değeri `settings`
 --
 ALTER TABLE `settings`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=55;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=56;
 
 --
 -- Tablo için AUTO_INCREMENT değeri `sliders`

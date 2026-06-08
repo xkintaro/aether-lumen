@@ -1,0 +1,20 @@
+BU DOSYADA PROJEYİ GELİŞTİRMEK İÇİN NOTLAR TUTACAĞIM.
+
+
+----------------------------
+
+categories tablosu yerine product_categories daha doğru olur. ilerde product_tags da eklenirse isim karmaşası yaşanmaz.
+
+----------------------------
+
+şuanda iletişim formu verileri contacts tablosuna kaydediliyor ve her yerde "contacts" isimlendirmesi kullanılmış.
+
+bu isimlendirmeler karışıklığa yol açabilir.
+
+bu tarz iletişim formları için standart bir isimlendirme kullanılmalı.
+
+form_contact
+form_quotation
+form_career 
+
+----------------------------
